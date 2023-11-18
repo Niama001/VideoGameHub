@@ -1,0 +1,251 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: auto;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.App{
+  width:100%;
+  height:100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.App::before{
+  content: '';
+  background: url('./assets/lake.gif') repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.App .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.App input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(0,0,0,0.3);
+  color: whitesmoke;
+}
+
+.App textarea {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(0,0,0,0.3);
+  color: whitesmoke;
+}
+
+.App imageStyle {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(0,0,0,0.3);
+  color: whitesmoke;
+}
+
+::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+  font-family: cursive;
+}
+
+.header{
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.subHeader{
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.subHeader2{
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 1% auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.title{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: cursive;
+  margin: auto;
+  padding: 0 5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+button {
+  font-family: cursive;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-top: 1rem;
+  color: whitesmoke;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.postItem{
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-top: 1rem;
+  color: whitesmoke;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.postImage{
+  max-width: 100%;
+  max-height: 100%;
+
+  display: block;
+  margin: auto;
+}
+
+.imageContainer{
+  overflow: hidden;
+  width: 100%;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.viewDetails{
+  font-weight: 400;
+}
+
+.title2{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: cursive;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.title3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: auto;
+  font-family: cursive;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.sortOption{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  font-family: cursive;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 12px;
+}
